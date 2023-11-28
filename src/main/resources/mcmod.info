@@ -1,0 +1,12 @@
+[{
+    "modid": "${modid}",
+    "name": "${modname}",
+    "description": "Gregtech Real Master CoreMod",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "logoFile": "",
+    "url": "",
+    "authorList": ["ModZatsudan"],
+    "credits": "",
+    "dependencies": []
+}]
