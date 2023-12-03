@@ -1,0 +1,13 @@
+
+# singleblock
+# Primitive Machines
+gtrmcore.machine.primitive_mixer_bronze.name=Primitive Bronze Mixer
+gtrmcore.machine.primitive_mixer_steel.name=Primitive Steel Mixer
+gtrmcore.machine.primitive_mixer.tooltip=Better than mixing by hand
+gtrmcore.machine.primitive_assembler_bronze.name=Primitive Bronze Assembler
+gtrmcore.machine.primitive_assembler_steel.name=Primitive Steel Assembler
+gtrmcore.machine.primitive_assembler.tooltip=Better than assembling by hand
+gtrmcore.machine.primitive_circuit_assembler_bronze.name=Primitive Bronze Circuit Assembler
+gtrmcore.machine.primitive_circuit_assembler_steel.name=Primitive Steel Circuit Assembler
+gtrmcore.machine.primitive_circuit_assembler.tooltip=Better than making circuits by hand
+
