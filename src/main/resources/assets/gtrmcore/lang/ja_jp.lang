@@ -1,0 +1,12 @@
+
+# singleblock
+# Primitive Machines
+gtrmcore.machine.primitive_mixer_bronze.name=初歩的なブロンズミキサー
+gtrmcore.machine.primitive_mixer_steel.name=初歩的なスチールミキサー
+gtrmcore.machine.primitive_mixer.tooltip=手で混ぜるよりはマシ
+gtrmcore.machine.primitive_assembler_bronze.name=初歩的なブロンズ組立機
+gtrmcore.machine.primitive_assembler_steel.name=初歩的なスチールア組立機
+gtrmcore.machine.primitive_assembler.tooltip=手で組み立てるよりはマシ
+gtrmcore.machine.primitive_circuit_assembler_bronze.name=初歩的なブロンズ回路作成機
+gtrmcore.machine.primitive_circuit_assembler_steel.name=初歩的なスチール回路作成機
+gtrmcore.machine.primitive_circuit_assembler.tooltip=手で回路を作るよりはマシ
