@@ -20,8 +20,11 @@ import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 
+import gregtech.api.GregTechAPI;
+import gregtech.api.cover.CoverDefinition;
 import gtrmcore.api.GTRMValues;
 import gtrmcore.api.util.GTRMLog;
+import gtrmcore.common.items.GTRMCoverBehaviors;
 import gtrmcore.common.items.GTRMMetaItems;
 import gtrmcore.loaders.recipe.GTRMRecipeManager;
 
@@ -50,6 +53,12 @@ public class CommonProxy {
         IForgeRegistry<Item> registry = event.getRegistry();
 
         // registry.register(createItemBlock(GTRM_BLOCK_METAL_CASING, VariantItemBlock::new));
+    }
+
+    @SubscribeEvent
+    public static void registerCovers(GregTechAPI.RegisterEvent<CoverDefinition> event) {
+        GTRMLog.logger.info("Registering Covers...");
+        GTRMCoverBehaviors.init();
     }
 
     @SubscribeEvent

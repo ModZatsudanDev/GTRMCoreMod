@@ -1,8 +1,20 @@
 package gtrmcore.common.items;
 
+import gregtech.api.items.metaitem.MetaItem;
+
 public class GTRMMetaItems {
 
     private GTRMMetaItems() {}
+
+    public static MetaItem<?>.MetaValueItem PRIMITIVE_MOTOR;
+    public static MetaItem<?>.MetaValueItem PRIMITIVE_PUMP;
+    public static MetaItem<?>.MetaValueItem PRIMITIVE_CONVEYOR;
+    public static MetaItem<?>.MetaValueItem PRIMITIVE_PISTON;
+    public static MetaItem<?>.MetaValueItem PRIMITIVE_ROBOT_ARM;
+    public static MetaItem<?>.MetaValueItem PRIMITIVE_FLUID_REGULATOR;
+    public static MetaItem<?>.MetaValueItem PRIMITIVE_FIELD_GENERATOR;
+    public static MetaItem<?>.MetaValueItem PRIMITIVE_EMITTER;
+    public static MetaItem<?>.MetaValueItem PRIMITIVE_SENSOR;
 
     public static void init() {
         GTRMMetaItem1 metaItem1 = new GTRMMetaItem1();
