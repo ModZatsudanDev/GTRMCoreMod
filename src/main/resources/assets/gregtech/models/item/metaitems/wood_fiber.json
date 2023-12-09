@@ -1,0 +1,6 @@
+{
+  "parent" : "item/generated",
+  "textures" : {
+    "layer0" : "gtrm:textures/items/cobblestone_saw.png"
+  }
+}
