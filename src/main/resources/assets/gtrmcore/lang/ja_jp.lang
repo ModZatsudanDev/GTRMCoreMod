@@ -10,3 +10,14 @@ gtrmcore.machine.primitive_assembler.tooltip=手で組み立てるよりはマ�
 gtrmcore.machine.primitive_circuit_assembler_bronze.name=初歩的なブロンズ回路作成機
 gtrmcore.machine.primitive_circuit_assembler_steel.name=初歩的なスチール回路作成機
 gtrmcore.machine.primitive_circuit_assembler.tooltip=手で回路を作るよりはマシ
+
+# item
+metaitem.primitive.motor.name=初歩的なモーター
+metaitem.primitive.pump.name=初歩的なポンプ
+metaitem.primitive.conveyor.name=初歩的なコンベアーモジュール
+metaitem.primitive.piston.name=初歩的なピストン
+metaitem.primitive.robot.arm.name=初歩的なロボットアーム
+metaitem.primitive.fluid.regulator.name=初歩的な流量制御器
+metaitem.primitive.field.generator.name=初歩的な空間発生器
+metaitem.primitive.emitter.name=初歩的なエミッタ
+metaitem.primitive.sensor.name=初歩的なセンサ

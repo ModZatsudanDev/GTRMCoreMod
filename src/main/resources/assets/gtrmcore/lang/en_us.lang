@@ -11,3 +11,13 @@ gtrmcore.machine.primitive_circuit_assembler_bronze.name=Primitive Bronze Circui
 gtrmcore.machine.primitive_circuit_assembler_steel.name=Primitive Steel Circuit Assembler
 gtrmcore.machine.primitive_circuit_assembler.tooltip=Better than making circuits by hand
 
+# item
+metaitem.primitive.motor.name=Primitive Motor
+metaitem.primitive.pump.name=Primitive Pump
+metaitem.primitive.conveyor.name=Primitive Conveyor Module
+metaitem.primitive.piston.name=Primitive Piston
+metaitem.primitive.robot.arm.name=Primitive Robot Arm
+metaitem.primitive.fluid.regulator.name=Primitive Fluid Regulator
+metaitem.primitive.field.generator.name=Primitive Field Generator
+metaitem.primitive.emitter.name=Primitive Emitter
+metaitem.primitive.sensor.name=Primitive Sensor

@@ -21,13 +21,15 @@ import gregtech.api.gui.widgets.ProgressWidget;
 import gregtech.api.metatileentity.MetaTileEntity;
 import gregtech.api.metatileentity.SteamMetaTileEntity;
 import gregtech.api.metatileentity.interfaces.IGregTechTileEntity;
-import gregtech.api.recipes.RecipeMaps;
 import gregtech.client.renderer.texture.Textures;
+import gtrmcore.api.gui.GTRMGuiTextures;
+import gtrmcore.api.recipes.GTRMRecipeMaps;
 
 public class PrimitiveCircuitAssembler extends SteamMetaTileEntity {
 
     public PrimitiveCircuitAssembler(ResourceLocation metaTileEntityId, boolean isHighPressure) {
-        super(metaTileEntityId, RecipeMaps.ASSEMBLER_RECIPES, Textures.ASSEMBLER_OVERLAY, isHighPressure);
+        super(metaTileEntityId, GTRMRecipeMaps.PRIMITIVE_CIRCUIT_ASSEMBLER_RECIPES, Textures.ASSEMBLER_OVERLAY,
+                isHighPressure);
     }
 
     @Override
@@ -55,7 +57,8 @@ public class PrimitiveCircuitAssembler extends SteamMetaTileEntity {
                 .slot(this.importItems, 4, 34, 35, GuiTextures.SLOT_STEAM.get(isHighPressure))
                 .slot(this.importItems, 5, 52, 35, GuiTextures.SLOT_STEAM.get(isHighPressure))
                 .progressBar(workableHandler::getProgressPercent, 77, 34, 20, 20,
-                        GuiTextures.PROGRESS_BAR_CIRCUIT_ASSEMBLER, ProgressWidget.MoveType.HORIZONTAL,
+                        GTRMGuiTextures.PROGRESS_BAR_PRIMITIVE_CIRCUIT_ASSEMBLER_STEAM.get(isHighPressure),
+                        ProgressWidget.MoveType.HORIZONTAL,
                         workableHandler.getRecipeMap())
                 .slot(this.exportItems, 0, 106, 35, true, false, GuiTextures.SLOT_STEAM.get(isHighPressure))
                 .slot(this.exportItems, 1, 124, 35, true, false, GuiTextures.SLOT_STEAM.get(isHighPressure))
