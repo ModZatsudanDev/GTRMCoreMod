@@ -15,6 +15,13 @@ public class GTRMMetaItems {
     public static MetaItem<?>.MetaValueItem PRIMITIVE_FIELD_GENERATOR;
     public static MetaItem<?>.MetaValueItem PRIMITIVE_EMITTER;
     public static MetaItem<?>.MetaValueItem PRIMITIVE_SENSOR;
+    public static MetaItem<?>.MetaValueItem COBBLESTONE_SAW;
+    public static MetaItem<?>.MetaValueItem COBBLESTONE_SAW_HEAD;
+    public static MetaItem<?>.MetaValueItem WOODEN_HARD_HAMMER;
+    public static MetaItem<?>.MetaValueItem WOODEN_HARD_HAMMER_HEAD;
+    public static MetaItem<?>.MetaValueItem WOODEN_PICKAXE_HEAD;
+    public static MetaItem<?>.MetaValueItem WOOD_FIBER;
+
 
     public static void init() {
         GTRMMetaItem1 metaItem1 = new GTRMMetaItem1();

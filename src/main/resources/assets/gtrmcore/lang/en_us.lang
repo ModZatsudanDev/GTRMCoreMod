@@ -21,3 +21,10 @@ metaitem.primitive.fluid.regulator.name=Primitive Fluid Regulator
 metaitem.primitive.field.generator.name=Primitive Field Generator
 metaitem.primitive.emitter.name=Primitive Emitter
 metaitem.primitive.sensor.name=Primitive Sensor
+metaitem.wooden.hard.hammer.head.name=Wooden Hard Hammer Head
+metaitem.wooden.hard.hammer.name=Wooden Hard Hammer
+metaitem.wooden.pickaxe.head.name=Wooden Pickaxe Head
+metaitem.cobblestone.saw.head.name=Cobblestone Saw head
+metaitem.cobblestone.saw.name=Cobblestone Saw
+metaitem.wood.fiber.name=Wood Fiber
+

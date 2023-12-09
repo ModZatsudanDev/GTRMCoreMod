@@ -39,5 +39,11 @@ public class GTRMMetaItem1 extends StandardMetaItem {
         PRIMITIVE_FIELD_GENERATOR = addItem(7, "primitive.field.generator");
         PRIMITIVE_EMITTER = addItem(8, "primitive.emitter");
         PRIMITIVE_SENSOR = addItem(9, "primitive.sensor");
+        WOODEN_HARD_HAMMER_HEAD = addItem(10, "wooden.hard.hammer.head");
+        WOODEN_HARD_HAMMER = addItem(12, "wooden.hard.hammer");
+        WOODEN_PICKAXE_HEAD = addItem(13 , "wooden.pickaxe.head");
+        COBBLESTONE_SAW_HEAD = addItem(14 , "cobblestone.saw.head");
+        COBBLESTONE_SAW = addItem(15 , "cobblestone.saw");
+        WOOD_FIBER = addItem(16, "wood.fiber");
     }
 }
