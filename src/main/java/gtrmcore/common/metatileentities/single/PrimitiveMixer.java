@@ -57,7 +57,7 @@ public class PrimitiveMixer extends SteamMetaTileEntity {
                 .slot(this.importItems, 5, 52, 35, GuiTextures.SLOT_STEAM.get(isHighPressure))
                 .progressBar(workableHandler::getProgressPercent, 77, 35, 20, 20,
                         GTRMGuiTextures.PROGRESS_BAR_PRIMITIVE_MIXER_STEAM.get(isHighPressure),
-                        ProgressWidget.MoveType.HORIZONTAL,
+                        ProgressWidget.MoveType.CIRCULAR,
                         workableHandler.getRecipeMap())
                 .slot(this.exportItems, 0, 106, 35, true, false, GuiTextures.SLOT_STEAM.get(isHighPressure))
                 .slot(this.exportItems, 1, 124, 35, true, false, GuiTextures.SLOT_STEAM.get(isHighPressure))

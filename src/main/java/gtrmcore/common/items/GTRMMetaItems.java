@@ -22,7 +22,6 @@ public class GTRMMetaItems {
     public static MetaItem<?>.MetaValueItem WOODEN_PICKAXE_HEAD;
     public static MetaItem<?>.MetaValueItem WOOD_FIBER;
 
-
     public static void init() {
         GTRMMetaItem1 metaItem1 = new GTRMMetaItem1();
         metaItem1.setRegistryName("meta_item_1");

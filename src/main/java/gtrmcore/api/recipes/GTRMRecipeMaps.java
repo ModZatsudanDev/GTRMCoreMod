@@ -15,7 +15,7 @@ public class GTRMRecipeMaps {
 
     @ZenProperty
     public static final RecipeMap<SimpleRecipeBuilder> PRIMITIVE_MIXER_RECIPES = new RecipeMap<>(
-            "primitive_mixer", 6, 1, 0, 0,
+            "primitive_mixer", 6, 2, 0, 0,
             new SimpleRecipeBuilder(), false)
                     .setSlotOverlay(false, false, GuiTextures.DUST_OVERLAY)
                     .setSlotOverlay(true, false, GuiTextures.DUST_OVERLAY)
@@ -24,7 +24,7 @@ public class GTRMRecipeMaps {
 
     @ZenProperty
     public static final RecipeMap<SimpleRecipeBuilder> PRIMITIVE_ASSEMBLER_RECIPES = new RecipeMap<>(
-            "primitive_assembler", 9, 1, 0, 0,
+            "primitive_assembler", 9, 2, 0, 0,
             new SimpleRecipeBuilder(), false)
                     .setSlotOverlay(false, false, GuiTextures.CIRCUIT_OVERLAY)
                     .setProgressBar(GuiTextures.PROGRESS_BAR_CIRCUIT, ProgressWidget.MoveType.HORIZONTAL)
@@ -32,7 +32,7 @@ public class GTRMRecipeMaps {
 
     @ZenProperty
     public static final RecipeMap<SimpleRecipeBuilder> PRIMITIVE_CIRCUIT_ASSEMBLER_RECIPES = new RecipeMap<>(
-            "primitive_circuit_assembler", 6, 1, 0, 0,
+            "primitive_circuit_assembler", 6, 2, 0, 0,
             new SimpleRecipeBuilder(), false)
                     .setSlotOverlay(false, false, GuiTextures.CIRCUIT_OVERLAY)
                     .setProgressBar(GuiTextures.PROGRESS_BAR_CIRCUIT_ASSEMBLER, ProgressWidget.MoveType.HORIZONTAL)

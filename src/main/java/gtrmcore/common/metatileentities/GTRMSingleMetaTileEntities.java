@@ -11,8 +11,8 @@ public class GTRMSingleMetaTileEntities {
     public static PrimitiveMixer PRIMITIVE_MIXER_STEEL;
     public static PrimitiveAssembler PRIMITIVE_ASSEMBLER_BRONZE;
     public static PrimitiveAssembler PRIMITIVE_ASSEMBLER_STEEL;
-    //public static PrimitiveCircuitAssembler PRIMITIVE_CIRCUIT_ASSEMBLER_BRONZE;
-    //public static PrimitiveCircuitAssembler PRIMITIVE_CIRCUIT_ASSEMBLER_STEEL;
+    // public static PrimitiveCircuitAssembler PRIMITIVE_CIRCUIT_ASSEMBLER_BRONZE;
+    // public static PrimitiveCircuitAssembler PRIMITIVE_CIRCUIT_ASSEMBLER_STEEL;
 
     public static void init() {
         // Primitive machine 11000~11005
@@ -24,9 +24,9 @@ public class GTRMSingleMetaTileEntities {
                 new PrimitiveAssembler(gtrmId("primitive_assembler_bronze"), false));
         PRIMITIVE_ASSEMBLER_STEEL = registerMetaTileEntity(11003,
                 new PrimitiveAssembler(gtrmId("primitive_assembler_steel"), true));
-        //PRIMITIVE_CIRCUIT_ASSEMBLER_BRONZE = registerMetaTileEntity(11004,
-        //        new PrimitiveCircuitAssembler(gtrmId("primitive_circuit_assembler_bronze"), false));
-        //PRIMITIVE_CIRCUIT_ASSEMBLER_STEEL = registerMetaTileEntity(11005,
-        //        new PrimitiveCircuitAssembler(gtrmId("primitive_circuit_assembler_steel"), true));
+        // PRIMITIVE_CIRCUIT_ASSEMBLER_BRONZE = registerMetaTileEntity(11004,
+        // new PrimitiveCircuitAssembler(gtrmId("primitive_circuit_assembler_bronze"), false));
+        // PRIMITIVE_CIRCUIT_ASSEMBLER_STEEL = registerMetaTileEntity(11005,
+        // new PrimitiveCircuitAssembler(gtrmId("primitive_circuit_assembler_steel"), true));
     }
 }

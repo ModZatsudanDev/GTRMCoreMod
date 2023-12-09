@@ -1,4 +1,4 @@
-package gtrmcore.loaders.recipe;
+package gtrmcore.loaders;
 
 import gtrmcore.common.items.GTRMMetaItems;
 import gtrmcore.common.metatileentities.MetaTileEntitiesManager;
