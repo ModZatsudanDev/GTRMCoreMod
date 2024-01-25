@@ -1,5 +1,6 @@
 package gtrmcore.client;
 
+import gtrmcore.common.metatileentities.GTRMMetaBlocks;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -40,6 +41,6 @@ public class ClientProxy extends CommonProxy {
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
-        // GTRMMetaBlocks.registerItemModels();
+         GTRMMetaBlocks.registerItemModels();
     }
 }

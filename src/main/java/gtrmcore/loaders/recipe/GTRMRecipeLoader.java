@@ -3,7 +3,11 @@ package gtrmcore.loaders.recipe;
 import static gregtech.api.GTValues.*;
 import static gregtech.api.unification.ore.OrePrefix.*;
 
+import gtrmcore.common.metatileentities.GTRMMetaBlocks;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
 import gregtech.api.recipes.ModHandler;
@@ -18,7 +22,7 @@ public class GTRMRecipeLoader {
     public static void init() {
         // materials();
         items();
-        // blocks();
+        blocks();
         // tools();
         // end_contents();
     }
@@ -46,6 +50,12 @@ public class GTRMRecipeLoader {
                 'H', GTRMMetaItems.COBBLESTONE_SAW_HEAD,
                 'S', Items.STICK,
                 'F', GTRMMetaItems.WOOD_FIBER);
+    }
+
+    private static void blocks() {
+        ModHandler.addShapedRecipe(true, "compact_cobblestone",
+                GTRMMetaBlocks.COMPACT_COBBLESTONE.getItemStack(), "AA", "AA",
+                'A', Item.getItemFromBlock(Blocks.COBBLESTONE));
     }
 
     private static void recipeCutter(ItemStack input, ItemStack output) {
