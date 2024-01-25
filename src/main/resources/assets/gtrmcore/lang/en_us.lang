@@ -28,3 +28,5 @@ metaitem.cobblestone.saw.head.name=Cobblestone Saw head
 metaitem.cobblestone.saw.name=Cobblestone Saw
 metaitem.wood.fiber.name=Wood Fiber
 
+# block
+tile.compact_cobblestone.name=Compact Cobblestone

@@ -28,6 +28,8 @@ import gtrmcore.common.items.GTRMCoverBehaviors;
 import gtrmcore.common.items.GTRMMetaItems;
 import gtrmcore.loaders.recipe.GTRMRecipeManager;
 
+import static gtrmcore.common.metatileentities.GTRMMetaBlocks.COMPACT_COBBLESTONE;
+
 @Mod.EventBusSubscriber(modid = GTRMValues.MODID)
 public class CommonProxy {
 
@@ -43,8 +45,7 @@ public class CommonProxy {
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         GTRMLog.logger.info("Registering Blocks...");
         IForgeRegistry<Block> registry = event.getRegistry();
-
-        // registry.register(GTRM_BLOCK_METAL_CASING);
+        registry.register(COMPACT_COBBLESTONE);
     }
 
     @SubscribeEvent
@@ -53,6 +54,7 @@ public class CommonProxy {
         IForgeRegistry<Item> registry = event.getRegistry();
 
         // registry.register(createItemBlock(GTRM_BLOCK_METAL_CASING, VariantItemBlock::new));
+        registry.register(createItemBlock(COMPACT_COBBLESTONE, ItemBlock::new));
     }
 
     @SubscribeEvent
