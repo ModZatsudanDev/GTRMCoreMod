@@ -26,7 +26,8 @@ import gtrmcore.api.GTRMValues;
 import gtrmcore.api.util.GTRMLog;
 import gtrmcore.common.items.GTRMCoverBehaviors;
 import gtrmcore.common.items.GTRMMetaItems;
-import gtrmcore.loaders.recipe.GTRMRecipeManager;
+import gtrmcore.loaders.GTRMRecipeManager;
+import gtrmcore.loaders.recipe.GTRMOreDictionaryLoader;
 
 import static gtrmcore.common.metatileentities.GTRMMetaBlocks.COMPACT_COBBLESTONE;
 
@@ -66,6 +67,7 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
         GTRMLog.logger.info("Registering Recipes...");
+        GTRMOreDictionaryLoader.init();
         GTRMRecipeManager.load();
     }
 
