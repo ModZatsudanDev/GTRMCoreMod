@@ -1,9 +1,13 @@
 package gtrmcore.loaders.recipe;
 
 import static gregtech.api.GTValues.*;
+import static gregtech.api.unification.material.Materials.Stone;
+import static gregtech.api.unification.material.Materials.Wood;
 import static gregtech.api.unification.ore.OrePrefix.*;
+import static gregtech.loaders.recipe.handlers.ToolRecipeHandler.addToolRecipe;
 
 import gregtech.api.unification.stack.UnificationEntry;
+import gregtech.common.items.ToolItems;
 import gtrmcore.GTRMCoreMod;
 import gtrmcore.common.metatileentities.GTRMMetaBlocks;
 import net.minecraft.init.Blocks;
@@ -54,6 +58,16 @@ public class GTRMRecipeLoader {
         ModHandler.addShapedRecipe(true,"wooden_hard_hammer_head",
                 GTRMMetaItems.WOODEN_HARD_HAMMER_HEAD.getStackForm()," P","sP",
                 'P', "plankWood");
+        ModHandler.addShapedRecipe(true,"wood_hard_hammer",
+                GTRMMetaItems.WOODEN_HARD_HAMMER.getStackForm(),"H ","SF",
+                'H', GTRMMetaItems.WOODEN_HARD_HAMMER_HEAD,
+                'S', Items.STICK,
+                'F', GTRMMetaItems.WOOD_FIBER);
+        ModHandler.addShapedRecipe(true,"cobblestone_saw",
+                GTRMMetaItems.COBBLESTONE_SAW.getStackForm(),"H ","SF",
+                'H', GTRMMetaItems.COBBLESTONE_SAW_HEAD,
+                'S', Items.STICK,
+                'F', GTRMMetaItems.WOOD_FIBER);
     }
 
     private static void blocks() {
