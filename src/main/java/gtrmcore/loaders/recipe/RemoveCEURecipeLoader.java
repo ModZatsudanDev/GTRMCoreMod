@@ -13,8 +13,5 @@ import static gregtech.api.unification.ore.OrePrefix.gear;
 
 public class RemoveCEURecipeLoader {
     public static void init() {
-
-        ModHandler.removeRecipeByName(new ResourceLocation(MODID, "hammer_wood"));
-        ModHandler.removeRecipeByName(new ResourceLocation(MODID,"saw_stone"));
     }
 }
