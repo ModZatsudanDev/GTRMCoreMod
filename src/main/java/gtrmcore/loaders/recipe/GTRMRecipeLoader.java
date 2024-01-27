@@ -50,20 +50,10 @@ public class GTRMRecipeLoader {
         ModHandler.addShapedRecipe(true,"cobblestone_saw_head",
                 GTRMMetaItems.COBBLESTONE_SAW_HEAD.getStackForm(),"C","C",
                 'C', GTRMMetaBlocks.COMPACT_COBBLESTONE);
-        ModHandler.addShapedRecipe(true, "cobblestone_saw",
-                GTRMMetaItems.COBBLESTONE_SAW.getStackForm(), "H ", "SF",
-                'H', GTRMMetaItems.COBBLESTONE_SAW_HEAD,
-                'S', Items.STICK,
-                'F', GTRMMetaItems.WOOD_FIBER);
+
         ModHandler.addShapedRecipe(true,"wooden_hard_hammer_head",
-                GTRMMetaItems.WOODEN_HARD_HAMMER_HEAD.getStackForm()," P","SP",
-                'P', "plankWood",
-                'S', GTRMMetaItems.COBBLESTONE_SAW);
-        ModHandler.addShapedRecipe(true,"wooden_hard_hammer",
-                GTRMMetaItems.WOODEN_HARD_HAMMER.getStackForm(),"H ","SF",
-                'H', GTRMMetaItems.WOODEN_HARD_HAMMER_HEAD,
-                'S', Items.STICK,
-                'F', GTRMMetaItems.WOOD_FIBER);
+                GTRMMetaItems.WOODEN_HARD_HAMMER_HEAD.getStackForm()," P","sP",
+                'P', "plankWood");
     }
 
     private static void blocks() {
