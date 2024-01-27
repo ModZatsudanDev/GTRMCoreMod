@@ -66,16 +66,6 @@ public class CEUOverrideRecipeLoader {
 
     }
         private static void items() {
-            addToolRecipe(Wood, ToolItems.HARD_HAMMER, true,
-                    "H ","SF",
-                    'H', GTRMMetaItems.WOODEN_HARD_HAMMER_HEAD,
-                    'S', Items.STICK,
-                    'F', GTRMMetaItems.WOOD_FIBER);
-            addToolRecipe(Stone, ToolItems.SAW, true,
-                    "H ","SF",
-                    'H', GTRMMetaItems.COBBLESTONE_SAW_HEAD,
-                    'S', Items.STICK,
-                    'F', GTRMMetaItems.WOOD_FIBER);
     }
 
     private static void blocks() {
