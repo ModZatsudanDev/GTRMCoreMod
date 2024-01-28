@@ -1,7 +1,8 @@
-package gtrmcore.loaders.recipe;
+package gtrmcore.loaders;
 
 import gtrmcore.common.items.GTRMMetaItems;
 import gtrmcore.common.metatileentities.MetaTileEntitiesManager;
+import gtrmcore.loaders.recipe.*;
 // import gtrmcore.loaders.recipe.ingredients.*;
 
 public class GTRMRecipeManager {
@@ -17,9 +18,10 @@ public class GTRMRecipeManager {
 
     public static void loadLow() {
         VanillaOverrideRecipes.init();
-        // CEUOverrideRecipeLoader.init();
+        CEUOverrideRecipeLoader.init();
         GTRMRecipeLoader.init();
         GTRMWoodRecipeLoader.init();
+        RemoveCEURecipeLoader.init();
     }
 
     public static void loadLowest() {
