@@ -2,6 +2,7 @@ package gtrmcore.common.blocks;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.ItemTool;
 
 public class CompactCobblestone extends BaseBlock {
 
