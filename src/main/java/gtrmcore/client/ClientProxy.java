@@ -8,6 +8,8 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 
 import gtrmcore.common.CommonProxy;
+import gtrmcore.common.items.GTRMItems;
+import gtrmcore.common.metatileentities.GTRMMetaBlocks;
 
 @Mod.EventBusSubscriber(Side.CLIENT)
 public class ClientProxy extends CommonProxy {
@@ -40,6 +42,7 @@ public class ClientProxy extends CommonProxy {
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
-        // GTRMMetaBlocks.registerItemModels();
+        GTRMMetaBlocks.registerItemModels();
+        GTRMItems.registerItemModels();
     }
 }
