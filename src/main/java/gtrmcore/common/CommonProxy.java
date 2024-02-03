@@ -1,5 +1,9 @@
 package gtrmcore.common;
 
+import static gtrmcore.common.items.GTRMItems.COBBLESTONE_SAW;
+import static gtrmcore.common.items.GTRMItems.WOODEN_HARD_HAMMER;
+import static gtrmcore.common.metatileentities.GTRMMetaBlocks.COMPACT_COBBLESTONE;
+
 import java.util.function.Function;
 
 import net.minecraft.block.Block;
@@ -29,8 +33,6 @@ import gtrmcore.common.items.GTRMMetaItems;
 import gtrmcore.loaders.GTRMRecipeManager;
 import gtrmcore.loaders.recipe.GTRMOreDictionaryLoader;
 
-import static gtrmcore.common.metatileentities.GTRMMetaBlocks.COMPACT_COBBLESTONE;
-
 @Mod.EventBusSubscriber(modid = GTRMValues.MODID)
 public class CommonProxy {
 
@@ -56,6 +58,8 @@ public class CommonProxy {
 
         // registry.register(createItemBlock(GTRM_BLOCK_METAL_CASING, VariantItemBlock::new));
         registry.register(createItemBlock(COMPACT_COBBLESTONE, ItemBlock::new));
+        registry.register(COBBLESTONE_SAW);
+        registry.register(WOODEN_HARD_HAMMER);
     }
 
     @SubscribeEvent

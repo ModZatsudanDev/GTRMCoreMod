@@ -1,26 +1,23 @@
 package gtrmcore.loaders.recipe;
 
 import static gregtech.api.GTValues.*;
-import static gregtech.api.unification.material.Materials.Stone;
-import static gregtech.api.unification.material.Materials.Wood;
 import static gregtech.api.unification.ore.OrePrefix.*;
-import static gregtech.loaders.recipe.handlers.ToolRecipeHandler.addToolRecipe;
 
-import gregtech.api.unification.stack.UnificationEntry;
-import gregtech.common.items.ToolItems;
-import gtrmcore.GTRMCoreMod;
-import gtrmcore.common.metatileentities.GTRMMetaBlocks;
+import gregtech.common.items.MetaItems;
+import gregtech.common.metatileentities.MetaTileEntities;
+import gtrmcore.common.items.CobblestoneSaw;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
 import gregtech.api.recipes.ModHandler;
 import gregtech.api.recipes.RecipeMaps;
 import gregtech.api.unification.material.Materials;
 import gregtech.api.util.GTUtility;
+import gtrmcore.common.items.GTRMItems;
 import gtrmcore.common.items.GTRMMetaItems;
+import gtrmcore.common.metatileentities.GTRMMetaBlocks;
 // import gtrmcore.common.metatileentities.GTRMMultiMetaTileEntities;
 
 public class GTRMRecipeLoader {
@@ -51,23 +48,29 @@ public class GTRMRecipeLoader {
                 'H', GTRMMetaItems.WOODEN_PICKAXE_HEAD,
                 'S', Items.STICK,
                 'F', GTRMMetaItems.WOOD_FIBER);
-        ModHandler.addShapedRecipe(true,"cobblestone_saw_head",
-                GTRMMetaItems.COBBLESTONE_SAW_HEAD.getStackForm(),"C","C",
+        ModHandler.addShapedRecipe(true, "cobblestone_saw_head",
+                GTRMMetaItems.COBBLESTONE_SAW_HEAD.getStackForm(), "C", "C",
                 'C', GTRMMetaBlocks.COMPACT_COBBLESTONE);
 
-        ModHandler.addShapedRecipe(true,"wooden_hard_hammer_head",
-                GTRMMetaItems.WOODEN_HARD_HAMMER_HEAD.getStackForm()," P","sP",
-                'P', "plankWood");
-        ModHandler.addShapedRecipe(true,"wood_hard_hammer",
-                GTRMMetaItems.WOODEN_HARD_HAMMER.getStackForm(),"H ","SF",
+        ModHandler.addShapedRecipe(true, "wooden_hard_hammer_head",
+                GTRMMetaItems.WOODEN_HARD_HAMMER_HEAD.getStackForm(), " P", "SP",
+                'P', "plankWood",
+                'S', GTRMItems.COBBLESTONE_SAW);
+        ModHandler.addShapedRecipe(true, "wood_hard_hammer",
+                GTRMItems.WOODEN_HARD_HAMMER.getDefaultInstance(), "H ", "SF",
                 'H', GTRMMetaItems.WOODEN_HARD_HAMMER_HEAD,
                 'S', Items.STICK,
                 'F', GTRMMetaItems.WOOD_FIBER);
-        ModHandler.addShapedRecipe(true,"cobblestone_saw",
-                GTRMMetaItems.COBBLESTONE_SAW.getStackForm(),"H ","SF",
+        ModHandler.addShapedRecipe(true, "cobblestone_saw",
+                GTRMItems.COBBLESTONE_SAW.getDefaultInstance(), "H ", "SF",
                 'H', GTRMMetaItems.COBBLESTONE_SAW_HEAD,
                 'S', Items.STICK,
                 'F', GTRMMetaItems.WOOD_FIBER);
+        ModHandler.addShapedRecipe(true,"workbench_bronze",
+                MetaTileEntities.WORKBENCH.getStackForm(),"HP","PS",
+                'H', GTRMItems.WOODEN_HARD_HAMMER,
+                'S', GTRMItems.COBBLESTONE_SAW,
+                'P', "plankWood");
     }
 
     private static void blocks() {
