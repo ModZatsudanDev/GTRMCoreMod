@@ -15,44 +15,19 @@ public class GTRMMetaItem1 extends StandardMetaItem {
 
     @Override
     public void registerSubItems() {
-        // Primitive parts
-        ELECTRIC_MOTOR_ULV = addItem(1, "primitive.motor");
-        ELECTRIC_PUMP_ULV = addItem(2, "primitive.pump")
-                .addComponents(new TooltipBehavior(lines -> {
-                    lines.add(I18n.format("metaitem.electric.pump.tooltip"));
-                    lines.add(I18n.format("gregtech.universal.tooltip.fluid_transfer_rate", 1280 / 4));
-                }));
-        CONVEYOR_MODULE_ULV = addItem(3, "primitive.conveyor")
-                .addComponents(new TooltipBehavior(lines -> {
-                    lines.add(I18n.format("metaitem.conveyor.module.tooltip"));
-                    lines.add(I18n.format("gregtech.universal.tooltip.item_transfer_rate", 2));
-                }));
-        ELECTRIC_PISTON_ULV = addItem(4, "primitive.piston");
-        ROBOT_ARM_ULV = addItem(5, "primitive.robot.arm")
-                .addComponents(new TooltipBehavior(lines -> {
-                    lines.add(I18n.format("metaitem.robot.arm.tooltip"));
-                    lines.add(I18n.format("gregtech.universal.tooltip.item_transfer_rate", 2));
-                }));
-        FLUID_REGULATOR_ULV = addItem(6, "primitive.fluid.regulator")
-                .addComponents(new TooltipBehavior(lines -> {
-                    lines.add(I18n.format("metaitem.fluid.regulator.tooltip"));
-                    lines.add(I18n.format("gregtech.universal.tooltip.fluid_transfer_rate", 320 / 4));
-                }));
-        FIELD_GENERATOR_ULV = addItem(7, "primitive.field.generator");
-        EMITTER_ULV = addItem(8, "primitive.emitter");
-        SENSOR_ULV = addItem(9, "primitive.sensor");
 
-        // GTRMparts 101~200
+        // GTRMparts 1~200
 
-        // First Age parts 101~110
-        WOODEN_HARD_HAMMER_HEAD = addItem(101, "wooden.hard.hammer.head");
-        WOODEN_PICKAXE_HEAD = addItem(102, "wooden.pickaxe.head");
-        COBBLESTONE_SAW_HEAD = addItem(103, "cobblestone.saw.head");
-        WOOD_FIBER = addItem(104, "wood.fiber");
+        // First Age parts 1~100
+        WOODEN_HARD_HAMMER_HEAD = addItem(1, "wooden.hard.hammer.head");
+        WOODEN_PICKAXE_HEAD = addItem(2, "wooden.pickaxe.head");
+        COBBLESTONE_SAW_HEAD = addItem(3, "cobblestone.saw.head");
+        WOOD_FIBER = addItem(4, "wood.fiber");
 
-        // Gregtech parts 1001~
+        // -----------------------------Gregtech parts 1001~------------------------------
 
-        // Circuits
+
+        // Circuits 1001~1100
 
         // steam valves
         STEAM_VALVE = addItem(1001, "valve.steam").setUnificationData(GTRMOrePrefix.valve, GTRMMarkerMaterials.Component.LOW_STEAM);
@@ -60,5 +35,54 @@ public class GTRMMetaItem1 extends StandardMetaItem {
         // high steam valves
         HIGH_STEAM_VALVE = addItem(1003, "valve.high_steam").setUnificationData(GTRMOrePrefix.valve, GTRMMarkerMaterials.Component.HIGH_STEAM);
         ELECTRIC_HIGH_STEAM_VALVE = addItem(1004,"valve.high_electric").setUnificationData(GTRMOrePrefix.valve, GTRMMarkerMaterials.Component.HIGH_STEAM);
+
+        // Components 1101~1200
+
+        // ULV
+        ELECTRIC_MOTOR_ULV = addItem(1101, "electric.motor.ulv");
+        ELECTRIC_PUMP_ULV = addItem(1102, "electric.pump.ulv")
+                .addComponents(new TooltipBehavior(lines -> {
+                    lines.add(I18n.format("metaitem.electric.pump.tooltip"));
+                    lines.add(I18n.format("gregtech.universal.tooltip.fluid_transfer_rate", 1280 / 4));
+                }));
+        CONVEYOR_MODULE_ULV = addItem(1103, "conveyor.module.ulv")
+                .addComponents(new TooltipBehavior(lines -> {
+                    lines.add(I18n.format("metaitem.conveyor.module.tooltip"));
+                    lines.add(I18n.format("gregtech.universal.tooltip.item_transfer_rate", 2));
+                }));
+        ELECTRIC_PISTON_ULV = addItem(1104, "electric.piston.ulv");
+        ROBOT_ARM_ULV = addItem(1105, "robot.arm.ulv")
+                .addComponents(new TooltipBehavior(lines -> {
+                    lines.add(I18n.format("metaitem.robot.arm.tooltip"));
+                    lines.add(I18n.format("gregtech.universal.tooltip.item_transfer_rate", 2));
+                }));
+        FLUID_REGULATOR_ULV = addItem(1106, "fluid.regulator.ulv")
+                .addComponents(new TooltipBehavior(lines -> {
+                    lines.add(I18n.format("metaitem.fluid.regulator.tooltip"));
+                    lines.add(I18n.format("gregtech.universal.tooltip.fluid_transfer_rate", 320 / 4));
+                }));
+        FIELD_GENERATOR_ULV = addItem(1107, "field.generator.ulv");
+        EMITTER_ULV = addItem(1108, "emitter.ulv");
+        SENSOR_ULV = addItem(1109, "sensor.ulv");
+
+        // low steam
+        ELECTRIC_MOTOR_LOW = addItem(1110, "electric.motor.low");
+        ELECTRIC_PUMP_LOW = addItem(1111, "electric.pump.low");
+        CONVEYOR_MODULE_LOW = addItem(1112, "conveyor.module.low");
+        ELECTRIC_PISTON_LOW = addItem(1113, "electric.piston.low");
+        ROBOT_ARM_LOW = addItem(1114, "robot.arm.low");
+        FIELD_GENERATOR_LOW = addItem(1115, "field.generator.low");
+        EMITTER_LOW = addItem(1116, "emitter.low");
+        SENSOR_LOW = addItem(1117, "sensor.low");
+
+        //high steam
+        ELECTRIC_MOTOR_HIGH = addItem(1118, "electric.motor.high");
+        ELECTRIC_PUMP_HIGH = addItem(1119, "electric.pump.high");
+        CONVEYOR_MODULE_HIGH = addItem(1120, "conveyor.module.high");
+        ELECTRIC_PISTON_HIGH = addItem(1121, "electric.piston.high");
+        ROBOT_ARM_HIGH = addItem(1122, "robot.arm.high");
+        FIELD_GENERATOR_HIGH = addItem(1123, "field.generator.high");
+        EMITTER_HIGH = addItem(1124, "emitter.high");
+        SENSOR_HIGH = addItem(1125, "sensor.high");
     }
 }

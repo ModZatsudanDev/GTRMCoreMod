@@ -12,13 +12,13 @@ import gregtech.common.covers.CoverRoboticArm;
 public class GTRMCoverBehaviors {
 
     public static void init() {
-        registerBehavior(gtrmId("primitive.conveyor"), GTRMMetaItems.CONVEYOR_MODULE_ULV,
+        registerBehavior(gtrmId("electric.conveyor.ulv"), GTRMMetaItems.ELECTRIC_MOTOR_ULV,
                 (def, tile, side) -> new CoverConveyor(def, tile, side, GTValues.ULV, 2));
-        registerBehavior(gtrmId("primitive.pump"), GTRMMetaItems.ELECTRIC_PUMP_ULV,
+        registerBehavior(gtrmId("electric.pump.ulv"), GTRMMetaItems.ELECTRIC_PUMP_ULV,
                 (def, tile, side) -> new CoverPump(def, tile, side, GTValues.ULV, 320));
-        registerBehavior(gtrmId("primitive.robot.arm"), GTRMMetaItems.ROBOT_ARM_ULV,
+        registerBehavior(gtrmId("robot.arm.ulv"), GTRMMetaItems.ROBOT_ARM_ULV,
                 (def, tile, side) -> new CoverRoboticArm(def, tile, side, GTValues.ULV, 2));
-        registerBehavior(gtrmId("primitive.fluid.regulator"), GTRMMetaItems.FLUID_REGULATOR_ULV,
+        registerBehavior(gtrmId("fluid.regulator.ulv"), GTRMMetaItems.FLUID_REGULATOR_ULV,
                 (def, tile, side) -> new CoverFluidRegulator(def, tile, side, GTValues.ULV, 16));
     }
 }
