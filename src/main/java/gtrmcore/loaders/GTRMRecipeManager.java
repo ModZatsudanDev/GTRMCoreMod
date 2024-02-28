@@ -17,11 +17,13 @@ public class GTRMRecipeManager {
     }
 
     public static void loadLow() {
+        GTMachineRecipes.init();
+        ComponentRecipes.init();
         VanillaOverrideRecipes.init();
-        CEUOverrideRecipe.init();
-        GTRMRecipe.init();
-        GTRMWoodRecipe.init();
-        RemoveCEURecipe.init();
+        CEUOverrideRecipes.init();
+        GTRMRecipes.init();
+        GTRMWoodRecipes.init();
+        RemoveCEURecipes.init();
     }
 
     public static void loadLowest() {

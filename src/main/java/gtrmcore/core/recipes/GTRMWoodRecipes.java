@@ -29,7 +29,7 @@ import gregtech.common.blocks.MetaBlocks;
 import gregtech.common.blocks.wood.BlockGregPlanks;
 import gtrmcore.api.GTRMValues;
 
-public class GTRMWoodRecipe {
+public class GTRMWoodRecipes {
 
     public static void init() {
         sticks();

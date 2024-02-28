@@ -16,31 +16,31 @@ public class GTRMMetaItem1 extends StandardMetaItem {
     @Override
     public void registerSubItems() {
         // Primitive parts
-        PRIMITIVE_MOTOR = addItem(1, "primitive.motor");
-        PRIMITIVE_PUMP = addItem(2, "primitive.pump")
+        ELECTRIC_MOTOR_ULV = addItem(1, "primitive.motor");
+        ELECTRIC_PUMP_ULV = addItem(2, "primitive.pump")
                 .addComponents(new TooltipBehavior(lines -> {
                     lines.add(I18n.format("metaitem.electric.pump.tooltip"));
                     lines.add(I18n.format("gregtech.universal.tooltip.fluid_transfer_rate", 1280 / 4));
                 }));
-        PRIMITIVE_CONVEYOR = addItem(3, "primitive.conveyor")
+        CONVEYOR_MODULE_ULV = addItem(3, "primitive.conveyor")
                 .addComponents(new TooltipBehavior(lines -> {
                     lines.add(I18n.format("metaitem.conveyor.module.tooltip"));
                     lines.add(I18n.format("gregtech.universal.tooltip.item_transfer_rate", 2));
                 }));
-        PRIMITIVE_PISTON = addItem(4, "primitive.piston");
-        PRIMITIVE_ROBOT_ARM = addItem(5, "primitive.robot.arm")
+        ELECTRIC_PISTON_ULV = addItem(4, "primitive.piston");
+        ROBOT_ARM_ULV = addItem(5, "primitive.robot.arm")
                 .addComponents(new TooltipBehavior(lines -> {
                     lines.add(I18n.format("metaitem.robot.arm.tooltip"));
                     lines.add(I18n.format("gregtech.universal.tooltip.item_transfer_rate", 2));
                 }));
-        PRIMITIVE_FLUID_REGULATOR = addItem(6, "primitive.fluid.regulator")
+        FLUID_REGULATOR_ULV = addItem(6, "primitive.fluid.regulator")
                 .addComponents(new TooltipBehavior(lines -> {
                     lines.add(I18n.format("metaitem.fluid.regulator.tooltip"));
                     lines.add(I18n.format("gregtech.universal.tooltip.fluid_transfer_rate", 320 / 4));
                 }));
-        PRIMITIVE_FIELD_GENERATOR = addItem(7, "primitive.field.generator");
-        PRIMITIVE_EMITTER = addItem(8, "primitive.emitter");
-        PRIMITIVE_SENSOR = addItem(9, "primitive.sensor");
+        FIELD_GENERATOR_ULV = addItem(7, "primitive.field.generator");
+        EMITTER_ULV = addItem(8, "primitive.emitter");
+        SENSOR_ULV = addItem(9, "primitive.sensor");
 
         // GTRMparts 101~200
 
