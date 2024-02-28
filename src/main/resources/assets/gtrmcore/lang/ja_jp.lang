@@ -28,5 +28,13 @@ metaitem.wood.fiber.name=木の繊維
 item.cobblestone_saw.name=丸石ののこぎり
 item.wooden_hard_hammer.name=木の硬いハンマー
 
+# 1001~
+metaitem.valve.steam.name=蒸気バルブ
+metaitem.valve.electric.name=電動蒸気バルブ
+metaitem.valve.high_steam.name=高圧蒸気バルブ
+metaitem.valve.high_electric.name=電動高圧蒸気バルブ
+
+
+
 # block
 tile.compact_cobblestone.name=圧縮した丸石

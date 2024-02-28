@@ -28,6 +28,8 @@ dependencies {
     implementation rfg.deobf("curse.maven:codechicken-lib-1-8-242818:2779848") // CCL 3.2.3.358
     implementation rfg.deobf("curse.maven:gregtech-ce-unofficial-557242:5050979") // CEu 2.8.6
     implementation rfg.deobf("curse.maven:gregicality-multiblocks-564858:4910674") // GCYM 1.2.7
+    implementation rfg.deobf("curse.maven:ae2-uel-extended-913322:5006535") // AE2 UEL : Extended 0.55.30-0.4.0.2
+    implementation rfg.deobf("curse.maven:nae2-884359:4955559") // AEAdditions 1.6.1a
 
     // Soft Dependencies
     implementation rfg.deobf("curse.maven:mixin-booter-419286:4835295") // MixinBooter 8.9

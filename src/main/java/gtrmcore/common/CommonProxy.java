@@ -30,8 +30,8 @@ import gtrmcore.api.GTRMValues;
 import gtrmcore.api.util.GTRMLog;
 import gtrmcore.common.items.GTRMCoverBehaviors;
 import gtrmcore.common.items.GTRMMetaItems;
+import gtrmcore.core.loaders.GTRMOreDictionaryLoader;
 import gtrmcore.loaders.GTRMRecipeManager;
-import gtrmcore.loaders.recipe.GTRMOreDictionaryLoader;
 
 @Mod.EventBusSubscriber(modid = GTRMValues.MODID)
 public class CommonProxy {

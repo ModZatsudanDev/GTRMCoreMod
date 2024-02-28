@@ -1,4 +1,4 @@
-package gtrmcore.loaders.recipe;
+package gtrmcore.core.recipes;
 
 import static gregtech.api.GTValues.ULV;
 import static gregtech.api.GTValues.VA;
@@ -29,7 +29,7 @@ import gregtech.common.blocks.MetaBlocks;
 import gregtech.common.blocks.wood.BlockGregPlanks;
 import gtrmcore.api.GTRMValues;
 
-public class GTRMWoodRecipeLoader {
+public class GTRMWoodRecipe {
 
     public static void init() {
         sticks();

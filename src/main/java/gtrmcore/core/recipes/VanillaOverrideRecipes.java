@@ -1,4 +1,4 @@
-package gtrmcore.loaders.recipe;
+package gtrmcore.core.recipes;
 
 import static gregtech.api.unification.ore.OrePrefix.*;
 

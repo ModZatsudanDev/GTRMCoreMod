@@ -1,11 +1,12 @@
-package gtrmcore.loaders.recipe;
+package gtrmcore.core.recipes;
 
 import static gregtech.api.GTValues.*;
 import static gregtech.api.unification.ore.OrePrefix.*;
 
-import gregtech.common.items.MetaItems;
-import gregtech.common.metatileentities.MetaTileEntities;
-import gtrmcore.common.items.CobblestoneSaw;
+import gregtech.api.unification.stack.UnificationEntry;
+import gtrmcore.api.unification.material.GTRMMarkerMaterials;
+import gtrmcore.api.unification.ore.GTRMOrePrefix;
+import gtrmcore.common.metatileentities.GTRMSingleMetaTileEntities;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -15,12 +16,13 @@ import gregtech.api.recipes.ModHandler;
 import gregtech.api.recipes.RecipeMaps;
 import gregtech.api.unification.material.Materials;
 import gregtech.api.util.GTUtility;
+import gregtech.common.metatileentities.MetaTileEntities;
 import gtrmcore.common.items.GTRMItems;
 import gtrmcore.common.items.GTRMMetaItems;
 import gtrmcore.common.metatileentities.GTRMMetaBlocks;
 // import gtrmcore.common.metatileentities.GTRMMultiMetaTileEntities;
 
-public class GTRMRecipeLoader {
+public class GTRMRecipe {
 
     public static void init() {
         // materials();
@@ -66,17 +68,27 @@ public class GTRMRecipeLoader {
                 'H', GTRMMetaItems.COBBLESTONE_SAW_HEAD,
                 'S', Items.STICK,
                 'F', GTRMMetaItems.WOOD_FIBER);
-        ModHandler.addShapedRecipe(true,"workbench_bronze",
-                MetaTileEntities.WORKBENCH.getStackForm(),"HP","PS",
+        ModHandler.addShapedRecipe(true, "workbench_bronze",
+                MetaTileEntities.WORKBENCH.getStackForm(), "HP", "PS",
                 'H', GTRMItems.WOODEN_HARD_HAMMER,
                 'S', GTRMItems.COBBLESTONE_SAW,
                 'P', "plankWood");
+        ModHandler.addShapedRecipe(true,"steam_valve",
+                GTRMMetaItems.STEAM_VALVE.getStackForm(),"hGf","SNS","FPF",
+                'P', new UnificationEntry(pipeNormalFluid, Materials.Potin),
+                'F', new UnificationEntry(pipeSmallFluid, Materials.Potin),
+                'G', new UnificationEntry(gear, Materials.Bronze),
+                'S', new UnificationEntry(gearSmall, Materials.Bronze),
+                'N', Blocks.PISTON);
     }
 
     private static void blocks() {
         ModHandler.addShapedRecipe(true, "compact_cobblestone",
                 GTRMMetaBlocks.COMPACT_COBBLESTONE.getItemStack(), "CC", "CC",
                 'C', Item.getItemFromBlock(Blocks.COBBLESTONE));
+        ModHandler.addShapedRecipe(true,"gregtech.machine.primitive_assembler_bronze",
+                GTRMSingleMetaTileEntities.PRIMITIVE_ASSEMBLER_BRONZE.getStackForm(),"   ","   "," v ",
+                'v', new UnificationEntry(GTRMOrePrefix.valve, GTRMMarkerMaterials.Component.LOW_STEAM));
     }
 
     private static void recipeCutter(ItemStack input, ItemStack output) {

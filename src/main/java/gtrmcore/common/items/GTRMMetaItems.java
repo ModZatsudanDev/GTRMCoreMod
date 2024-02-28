@@ -19,6 +19,11 @@ public class GTRMMetaItems {
     public static MetaItem<?>.MetaValueItem WOODEN_HARD_HAMMER_HEAD;
     public static MetaItem<?>.MetaValueItem WOODEN_PICKAXE_HEAD;
     public static MetaItem<?>.MetaValueItem WOOD_FIBER;
+    public static MetaItem<?>.MetaValueItem STEAM_VALVE;
+    public static MetaItem<?>.MetaValueItem ELECTRIC_STEAM_VALVE;
+    public static MetaItem<?>.MetaValueItem HIGH_STEAM_VALVE;
+    public static MetaItem<?>.MetaValueItem ELECTRIC_HIGH_STEAM_VALVE;
+
 
     public static void init() {
         GTRMMetaItem1 metaItem1 = new GTRMMetaItem1();

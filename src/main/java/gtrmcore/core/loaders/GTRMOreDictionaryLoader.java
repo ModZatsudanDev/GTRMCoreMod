@@ -1,4 +1,4 @@
-package gtrmcore.loaders.recipe;
+package gtrmcore.core.loaders;
 
 public class GTRMOreDictionaryLoader {
 

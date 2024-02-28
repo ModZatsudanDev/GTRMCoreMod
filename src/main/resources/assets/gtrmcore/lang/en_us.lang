@@ -25,6 +25,14 @@ metaitem.wooden.hard.hammer.head.name=Wooden Hard Hammer Head
 metaitem.wooden.pickaxe.head.name=Wooden Pickaxe Head
 metaitem.cobblestone.saw.head.name=Cobblestone Saw head
 metaitem.wood.fiber.name=Wood Fiber
+
+# 1001~
+metaitem.valve.steam.name=Steam Valve
+metaitem.valve.electric.name=Electronic Steam Valve
+metaitem.valve.high_steam.name=High Steam Valve
+metaitem.valve.high_electric.name=Electronic HighSteam Valve
+
+
 item.cobblestone_saw.name=Cobblestone Saw
 item.wooden_hard_hammer.name=Wooden Hard Hammer
 

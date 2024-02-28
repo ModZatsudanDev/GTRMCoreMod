@@ -2,6 +2,8 @@ package gtrmcore.common.items;
 
 import static gtrmcore.common.items.GTRMMetaItems.*;
 
+import gtrmcore.api.unification.material.GTRMMarkerMaterials;
+import gtrmcore.api.unification.ore.GTRMOrePrefix;
 import net.minecraft.client.resources.I18n;
 
 import gregtech.api.items.metaitem.StandardMetaItem;
@@ -40,10 +42,23 @@ public class GTRMMetaItem1 extends StandardMetaItem {
         PRIMITIVE_EMITTER = addItem(8, "primitive.emitter");
         PRIMITIVE_SENSOR = addItem(9, "primitive.sensor");
 
-        // GTRMparts 100~200
+        // GTRMparts 101~200
+
+        // First Age parts 101~110
         WOODEN_HARD_HAMMER_HEAD = addItem(101, "wooden.hard.hammer.head");
         WOODEN_PICKAXE_HEAD = addItem(102, "wooden.pickaxe.head");
         COBBLESTONE_SAW_HEAD = addItem(103, "cobblestone.saw.head");
         WOOD_FIBER = addItem(104, "wood.fiber");
+
+        // Gregtech parts 1001~
+
+        // Circuits
+
+        // steam valves
+        STEAM_VALVE = addItem(1001, "valve.steam").setUnificationData(GTRMOrePrefix.valve, GTRMMarkerMaterials.Component.LOW_STEAM);
+        ELECTRIC_STEAM_VALVE = addItem(1002,"valve.electric").setUnificationData(GTRMOrePrefix.valve, GTRMMarkerMaterials.Component.LOW_STEAM);
+        // high steam valves
+        HIGH_STEAM_VALVE = addItem(1003, "valve.high_steam").setUnificationData(GTRMOrePrefix.valve, GTRMMarkerMaterials.Component.HIGH_STEAM);
+        ELECTRIC_HIGH_STEAM_VALVE = addItem(1004,"valve.high_electric").setUnificationData(GTRMOrePrefix.valve, GTRMMarkerMaterials.Component.HIGH_STEAM);
     }
 }

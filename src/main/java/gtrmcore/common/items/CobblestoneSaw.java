@@ -1,6 +1,5 @@
 package gtrmcore.common.items;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
 import org.jetbrains.annotations.NotNull;
@@ -12,15 +11,17 @@ public class CobblestoneSaw extends BaseItem {
         setMaxDamage(4);
         setMaxStackSize(1);
     }
+
     @Override
     public boolean isEnchantable(@NotNull ItemStack stack) {
         return false;
     }
 
     @Override
-    public boolean hasContainerItem (@NotNull ItemStack stack){
+    public boolean hasContainerItem(@NotNull ItemStack stack) {
         return true;
     }
+
     @Override
     public @NotNull ItemStack getContainerItem(ItemStack itemStack) {
         ItemStack container = itemStack.copy();
