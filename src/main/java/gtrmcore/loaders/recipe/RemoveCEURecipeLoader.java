@@ -9,5 +9,6 @@ public class RemoveCEURecipeLoader {
 
     public static void init() {
         ModHandler.removeRecipeByName(new ResourceLocation(GTValues.MODID,"workbench_bronze"));
+
     }
 }

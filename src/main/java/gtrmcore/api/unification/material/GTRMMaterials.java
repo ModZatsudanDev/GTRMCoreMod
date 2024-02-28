@@ -1,5 +1,9 @@
 package gtrmcore.api.unification.material;
 
+import gregtech.api.unification.material.Material;
+
+import gtrmcore.api.GTRMValues;
+
 /**
  * Material Registration.
  * <p>
@@ -21,6 +25,7 @@ package gtrmcore.api.unification.material;
  * - color: 0xFFFFFF
  */
 public class GTRMMaterials {
+
     /*
      * FOR ADDON DEVELOPERS:
      *
@@ -32,16 +37,19 @@ public class GTRMMaterials {
      * claimed ranges below this comment. Max value is 32767.
      *
      * - Gregicality: 3000-19999
-     * - FREE RANGE 20000-20999
+     * - Gregification: 20000-20999
      * - HtmlTech: 21000-21499
-     * - GregTech Food Option: 21500-21999
-     * - PCM's Ore Addon: 22000-23599
+     * - GregTech Food Option: 21500-22499
+     * - FREE RANGE 22500-23599
      * - MechTech: 23600-23999
      * - FREE RANGE 24000-31999
      * - Reserved for CraftTweaker: 32000-32767
      */
 
     // Element Materials
+
+    // First Degree Materials
+    public static Material ConductiveIron;
 
     // Second Degree Materials
 
@@ -55,7 +63,11 @@ public class GTRMMaterials {
         GTRMMaterialFlags.init();
     }
 
-    public static void registerMaterialsLow() {}
+    public static void registerMaterialsLow() {
+        GTRMFirstDegreeMaterials.init(); // 24001 - 24100
+    }
 
-    public static void registerMaterialsLowest() {}
-}
+    public static void registerMaterialsLowest() {
+
+        }
+    }

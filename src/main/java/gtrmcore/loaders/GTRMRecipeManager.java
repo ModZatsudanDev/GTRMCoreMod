@@ -17,6 +17,7 @@ public class GTRMRecipeManager {
     }
 
     public static void loadLow() {
+        ComponentRecipes.init();
         VanillaOverrideRecipes.init();
         CEUOverrideRecipeLoader.init();
         GTRMRecipeLoader.init();

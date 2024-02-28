@@ -13,6 +13,9 @@ import gtrmcore.api.GTRMValues;
 public class VanillaOverrideRecipes {
 
     public static void init() {
+        // CraftingTable
+        ModHandler.removeRecipeByName(new ResourceLocation(GTRMValues.MODID_VANILLA, "crafting_table"));
+
         // Flint
         ModHandler.addShapelessRecipe("flint", new ItemStack(Items.FLINT, 1),
                 new ItemStack(Blocks.GRAVEL, 1),
