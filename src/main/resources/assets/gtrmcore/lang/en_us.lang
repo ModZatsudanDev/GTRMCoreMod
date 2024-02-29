@@ -11,28 +11,52 @@ gtrmcore.machine.primitive_circuit_assembler_bronze.name=Primitive Bronze Circui
 gtrmcore.machine.primitive_circuit_assembler_steel.name=Primitive Steel Circuit Assembler
 gtrmcore.machine.primitive_circuit_assembler.tooltip=Better than making circuits by hand
 
-# item
-metaitem.primitive.motor.name=Primitive Motor
-metaitem.primitive.pump.name=Primitive Pump
-metaitem.primitive.conveyor.name=Primitive Conveyor Module
-metaitem.primitive.piston.name=Primitive Piston
-metaitem.primitive.robot.arm.name=Primitive Robot Arm
-metaitem.primitive.fluid.regulator.name=Primitive Fluid Regulator
-metaitem.primitive.field.generator.name=Primitive Field Generator
-metaitem.primitive.emitter.name=Primitive Emitter
-metaitem.primitive.sensor.name=Primitive Sensor
+# items
+# -----------------------------GTRM Parts 1~200---------------------------------
+# First Age parts 1~100
 metaitem.wooden.hard.hammer.head.name=Wooden Hard Hammer Head
 metaitem.wooden.pickaxe.head.name=Wooden Pickaxe Head
 metaitem.cobblestone.saw.head.name=Cobblestone Saw head
 metaitem.wood.fiber.name=Wood Fiber
 
-# 1001~
+# -----------------------------Gregtech parts 1001~------------------------------
+# Circuits 1001~1100
 metaitem.valve.steam.name=Steam Valve
 metaitem.valve.electric.name=Electronic Steam Valve
 metaitem.valve.high_steam.name=High Steam Valve
-metaitem.valve.high_electric.name=Electronic HighSteam Valve
+metaitem.valve.high_electric.name=Electronic High Steam Valve
+# Components 1101~1200
+metaitem.electric.motor.low.name=Steam Electric Motor
+metaitem.electric.pump.low.name=Steam Electric Pump
+metaitem.conveyor.module.low.name=Steam Conveyor Module
+metaitem.electric.piston.low.name=Steam Electric Piston
+metaitem.robot.arm.low.name=Steam Robot Arm
+metaitem.fluid.regulator.low.name=Steam Fluid Regulator
+metaitem.field.generator.low.name=Steam Field Generator
+metaitem.emitter.low.name=Steam Emitter
+metaitem.sensor.low.name=Steam Sensor
+metaitem.electric.motor.high.name=High Steam Electric Motor
+metaitem.electric.pump.high.name=High Steam Electric Pump
+metaitem.conveyor.module.high.name=High Steam Conveyor Module
+metaitem.electric.piston.high.name=High Steam Electric Piston
+metaitem.robot.arm.high.name=High Steam Robot Arm
+metaitem.fluid.regulator.high.name=High Steam Fluid Regulator
+metaitem.field.generator.high.name=High Steam Field Generator
+metaitem.emitter.high.name=High Steam Emitter
+metaitem.sensor.high.name=High Steam Sensor
+metaitem.electric.motor.ulv.name=ULV Electric Motor
+metaitem.electric.pump.ulv.name=ULV Electric Pump
+metaitem.conveyor.module.ulv.name=ULV Conveyor Module
+metaitem.electric.piston.ulv.name=ULV Electric Piston
+metaitem.robot.arm.ulv.name=ULV Robot Arm
+metaitem.fluid.regulator.ulv.name=ULV Fluid Regulator
+metaitem.field.generator.ulv.name=ULV Field Generator
+metaitem.emitter.ulv.name=ULV Emitter
+metaitem.sensor.ulv.name=ULV Sensor
 
 
+
+# No Metaitem Parts
 item.cobblestone_saw.name=Cobblestone Saw
 item.wooden_hard_hammer.name=Wooden Hard Hammer
 
